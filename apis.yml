@@ -1,7 +1,29 @@
 aid: zipmatch
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/zipmatch.png
 name: ZipMatch
-description: ZipMatch is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ZipMatch was an online real estate marketplace and property portal based in
+  the Philippines, backed by 500 Startups (500 Global) among other investors,
+  that helped buyers and renters discover homes, condominiums, and other
+  property listings across Metro Manila and the wider Philippine market. It was
+  surfaced as a 500 Global portfolio company and added to the API Evangelist
+  network as a stub lead for enrichment. As of this enrichment pass the company
+  appears to be defunct: the zipmatch.com domain is still registered (GoDaddy,
+  registry expiry 2029) but has no DNS delegation — no NS, A, MX, or TXT records
+  resolve — so there is no live website, developer portal, documentation, or API
+  surface to harvest. This profile is retained as a historical portfolio-lead
+  record; no API artifacts exist to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/zipmatch/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +31,27 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: defunct
+x-domain-status:
+  domain: zipmatch.com
+  registered: true
+  registrar: GoDaddy.com, LLC
+  registry_expiry: '2029-11-07'
+  resolves: false
+  dns_records: none
+  probed: '2026-07-21'
+  note: Domain registered but not delegated (no NS/A/MX/TXT); site does not resolve.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Real Estate
+- PropTech
+- Philippines
+- Marketplace
+- Property Listings
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +61,8 @@ maintainers:
 common:
 - type: Website
   url: https://zipmatch.com
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
