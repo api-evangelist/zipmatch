@@ -41,7 +41,7 @@ x-domain-status:
   dns_records: none
   probed: '2026-07-21'
   note: Domain registered but not delegated (no NS/A/MX/TXT); site does not resolve.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-21'
 tags:
